@@ -6,7 +6,7 @@ name: Deploy Bicep files
 variables:
   vmImageName: "ubuntu-latest"
 
-  azureServiceConnection: "Pay-As-You-Go"
+  azureServiceConnection: "Default-Service-Connection"
   resourceGroupName: "cosmos-outbox-rg"
   location: "West US 2"
   templateFile: "./cosmos.bicep"
