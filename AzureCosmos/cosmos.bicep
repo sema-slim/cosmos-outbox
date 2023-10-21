@@ -102,7 +102,7 @@ resource container 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/container
       id: containerName
       partitionKey: {
         paths: [
-          '/myPartitionKey'
+          '/partitionKey'
         ]
         kind: 'Hash'
       }
