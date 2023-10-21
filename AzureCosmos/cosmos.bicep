@@ -5,7 +5,7 @@ param accountName string = 'sql-${uniqueString(resourceGroup().id)}'
 param location string = resourceGroup().location
 
 @description('The primary region for the Azure Cosmos DB account.')
-param primaryRegion string
+param primaryRegion string  = resourceGroup().location
 
 @description('The secondary region for the Azure Cosmos DB account.')
 param secondaryRegion string
